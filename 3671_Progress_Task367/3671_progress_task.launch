@@ -1,0 +1,9 @@
+<launch>
+	
+	<!--  runs the emulation_vrep.launch file.It gives the whycon image and aruco image output and runs the other necessary launch files-->
+	 <include file="/home/sahil88/catkin_ws/src/hungry_bird/launch/emulation_vrep.launch"/>
+
+	<!--  runs the python script to traverse the drone -->
+	 <node pkg="hungry_bird" type="task_3_pos_hold.py" name="drone_control"/>
+	
+</launch>
